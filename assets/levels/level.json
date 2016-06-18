@@ -4,16 +4,24 @@
 
         "cars_spritesheet": { "type": "spritesheet", "source": "assets/images/cars.png", "frame_width": 150, "frame_height": 105 },
         "bus_image": { "type": "image", "source": "assets/images/bus.png" },
+        "archer_image": {"type": "image", "source": "assets/images/archer.png"},
+        "arrow_image": {"type": "image", "source": "assets/images/arrow.png"},
 
         "background": { "type": "prefab", "source": "assets/prefabs/background.json" },
         "car": { "type": "prefab", "source": "assets/prefabs/car.json" },
         "bus": { "type": "prefab", "source": "assets/prefabs/bus.json" },
-        "car_spawner": { "type": "prefab", "source": "assets/prefabs/car_spawner.json" }
+        "car_spawner": { "type": "prefab", "source": "assets/prefabs/car_spawner.json" },
+        "archer": { "type": "prefab", "source": "assets/prefabs/archer.json" },
+        "arrow": { "type": "prefab", "source": "assets/prefabs/arrow.json" },
+        "score": { "type": "prefab", "source": "assets/prefabs/score.json" }
     },
     "groups": [
         "spawners",
         "background",
-        "cars"
+        "cars",
+        "arrows",
+        "archers",
+        "hud"
     ],
     "prefabs": {
         "background": {
@@ -27,12 +35,20 @@
         "car_spawner": {
             "type": "car_spawner",
             "position": {"x": 0, "y": 0.5}
+        },
+        "archer": {
+            "type": "archer",
+            "position": {"x": 0.5, "y": 0.9},
+            "scale": {"x": 0.8, "y": 0.8}
         }
     },
     "hud": {
         "margins": {"left": 20, "right": 20, "top": 20, "bottom": 20},
         "elements": {
-
+            "player_lives": {
+                "type": "score",
+                "region": "top_right"
+            }
         }
     }
 }

@@ -9,7 +9,9 @@ TiroAoOnibus.ScriptFactory = function (game_state) {
         "scale_to_fit": TiroAoOnibus.ScaleToFit.prototype.constructor,
         "hit_car": TiroAoOnibus.HitCar.prototype.constructor,
         "hit_bus": TiroAoOnibus.HitBus.prototype.constructor,
-        "move_car": TiroAoOnibus.MoveCar.prototype.constructor
+        "move_car": TiroAoOnibus.MoveCar.prototype.constructor,
+        "shoot_arrow": TiroAoOnibus.ShootArrow.prototype.constructor,
+        "show_score": TiroAoOnibus.ShowScore.prototype.constructor
     };
 };
 

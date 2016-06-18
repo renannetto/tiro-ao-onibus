@@ -1,0 +1,19 @@
+{
+    "sprite": {
+        "type": "text",
+        "text": "Score: ",
+        "style": {
+            "font": "24px Arial",
+            "fill": "#FFFFFF"
+        },
+        "group": "hud",
+        "properties": {
+            "anchor": {"x": 0.5, "y": 0.5}
+        }
+    },
+    "scripts": {
+        "show_score": {
+
+        }
+    }
+}

@@ -12,5 +12,6 @@ TiroAoOnibus.HitBus.prototype.constructor = TiroAoOnibus.HitBus;
 
 TiroAoOnibus.HitBus.prototype.hit = function () {
     "use strict";
-
+    this.prefab.kill();
+    this.game_state.score += this.score;
 };

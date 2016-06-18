@@ -1,0 +1,20 @@
+{
+    "sprite": {
+        "type": "sprite",
+        "texture": {"type": "asset_key", "asset_key": "archer_image"},
+        "group": "archers",
+        "properties": {
+            "anchor": {"x": 0.5, "y": 0.5}
+        }
+    },
+    "components": {
+
+    },
+    "scripts": {
+        "shoot_arrow": {
+            "pool": "arrows",
+            "prefab_to_create": "arrow",
+            "arrow_speed": 500
+        }
+    }
+}

@@ -22,5 +22,6 @@ TiroAoOnibus.HitCar.prototype.reset = function () {
 
 TiroAoOnibus.HitCar.prototype.hit = function () {
     "use strict";
-
+    this.prefab.kill();
+    this.game_state.game_over();
 };

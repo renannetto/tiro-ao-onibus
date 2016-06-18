@@ -1,0 +1,20 @@
+{
+    "sprite": {
+        "type": "sprite",
+        "texture": {"type": "asset_key", "asset_key": "arrow_image"},
+        "group": "arrows",
+        "properties": {
+            "anchor": {"x": 0.5, "y": 0.5}
+        }
+    },
+    "components": {
+        "arcade_body": {
+            "collisions": [
+
+            ]
+        }
+    },
+    "scripts": {
+
+    }
+}
