@@ -17,6 +17,9 @@
     "scripts": {
         "hit_bus": {
             "score": 1
+        },
+        "move_car": {
+            "speed": 200
         }
     }
 }

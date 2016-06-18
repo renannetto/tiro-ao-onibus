@@ -16,7 +16,10 @@
     },
     "scripts": {
         "hit_car": {
-
+            "number_of_frames": 8
+        },
+        "move_car": {
+            "speed": 200
         }
     }
 }

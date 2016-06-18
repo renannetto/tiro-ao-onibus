@@ -5,7 +5,11 @@ TiroAoOnibus.ScriptFactory = function (game_state) {
     "use strict";
     Engine.ScriptFactory.call(this, game_state);
     this.scripts = {
-
+        "spawn_car": TiroAoOnibus.SpawnCar.prototype.constructor,
+        "scale_to_fit": TiroAoOnibus.ScaleToFit.prototype.constructor,
+        "hit_car": TiroAoOnibus.HitCar.prototype.constructor,
+        "hit_bus": TiroAoOnibus.HitBus.prototype.constructor,
+        "move_car": TiroAoOnibus.MoveCar.prototype.constructor
     };
 };
 

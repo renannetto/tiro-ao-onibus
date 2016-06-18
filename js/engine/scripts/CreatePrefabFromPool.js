@@ -25,6 +25,7 @@ Engine.CreatePrefabFromPool.prototype.create_object = function (position_x, posi
         this.created_prefabs += 1;
         position = {"x": position_x, "y": position_y};
         prefab = this.game_state.prefab_factory.create_prefab(prefab_name, position, this.prefab_parameters);
+        prefab.init();
     } else {
         prefab = this.game_state.prefabs[prefab_sprite.name];
         prefab.reset(position_x, position_y);

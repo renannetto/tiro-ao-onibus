@@ -1,12 +1,23 @@
 {
-    "world": {"origin_x": 0, "origin_y": 0, "width": 640, "height": 480},
     "assets": {
+        "city_image": { "type": "image", "source": "assets/images/city.png" },
+
+        "background": { "type": "prefab", "source": "assets/prefabs/background.json" },
         "text": { "type": "prefab", "source": "assets/prefabs/text.json" }
     },
     "groups": [
+        "background",
         "hud"
     ],
     "prefabs": {
+        "background": {
+            "type": "background",
+            "position": {"x": 0.5, "y": 0.5},
+            "properties": {
+                "texture": "city_image",
+                "group": "background"
+            }
+        },
         "title": {
             "type": "text",
             "position": {"x": 0.5, "y": 0.3},
@@ -20,7 +31,7 @@
             "position": {"x": 0.5, "y": 0.7},
             "properties": {
                 "fontSize": 24,
-                "text": "touch screen to start"
+                "text": "toque para começar"
             }
         }
     }

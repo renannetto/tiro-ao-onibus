@@ -1,19 +1,32 @@
 {
     "assets": {
+        "city_image": { "type": "image", "source": "assets/images/city.png" },
+
         "cars_spritesheet": { "type": "spritesheet", "source": "assets/images/cars.png", "frame_width": 150, "frame_height": 105 },
         "bus_image": { "type": "image", "source": "assets/images/bus.png" },
 
+        "background": { "type": "prefab", "source": "assets/prefabs/background.json" },
         "car": { "type": "prefab", "source": "assets/prefabs/car.json" },
-        "bus": { "type": "prefab", "source": "assets/prefabs/bus.json" }
+        "bus": { "type": "prefab", "source": "assets/prefabs/bus.json" },
+        "car_spawner": { "type": "prefab", "source": "assets/prefabs/car_spawner.json" }
     },
     "groups": [
         "spawners",
+        "background",
         "cars"
     ],
     "prefabs": {
+        "background": {
+            "type": "background",
+            "position": {"x": 0.5, "y": 0.5},
+            "properties": {
+                "texture": "city_image",
+                "group": "background"
+            }
+        },
         "car_spawner": {
             "type": "car_spawner",
-            "position": {"x": 0, "y": 0},
+            "position": {"x": 0, "y": 0.5}
         }
     },
     "hud": {

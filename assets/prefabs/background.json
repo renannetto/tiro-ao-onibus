@@ -1,0 +1,18 @@
+{
+    "sprite": {
+        "type": "sprite",
+        "texture": {"type": "asset_key", "asset_key": "city_image"},
+        "group": "background",
+        "properties": {
+            "anchor": {"x": 0.5, "y": 0.5}
+        }
+    },
+    "components": {
+
+    },
+    "scripts": {
+        "scale_to_fit": {
+
+        }
+    }
+}

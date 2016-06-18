@@ -21,12 +21,12 @@ TiroAoOnibus.LevelState.prototype.init = function (level_data, extra_parameters)
     this.game.physics.arcade.gravity.y = 0;
 };
 
-TiroAoOnibus.LevelState.prototype.render = function () {
-    "use strict";
-    var prefab_name;
-    for (prefab_name in this.prefabs) {
-        if (this.prefabs.hasOwnProperty(prefab_name)) {
-            this.game.debug.body(this.prefabs[prefab_name].sprite);
-        }
-    }
-};
+//TiroAoOnibus.LevelState.prototype.render = function () {
+//    "use strict";
+//    var prefab_name;
+//    for (prefab_name in this.prefabs) {
+//        if (this.prefabs.hasOwnProperty(prefab_name)) {
+//            this.game.debug.body(this.prefabs[prefab_name].sprite);
+//        }
+//    }
+//};

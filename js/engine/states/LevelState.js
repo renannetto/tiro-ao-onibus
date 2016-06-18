@@ -9,14 +9,6 @@ Engine.LevelState = function () {
 Engine.LevelState.prototype = Object.create(Engine.JsonLevelState.prototype);
 Engine.LevelState.prototype.constructor = Engine.LevelState;
 
-Engine.LevelState.prototype.init = function (level_data) {
-    "use strict";
-    Engine.JsonLevelState.prototype.init.call(this, level_data);
-
-    var world_dimensions = this.level_data.world;
-    this.game.world.setBounds(world_dimensions.origin_x, world_dimensions.origin_y, world_dimensions.width, world_dimensions.height);
-};
-
 Engine.LevelState.prototype.create = function () {
     "use strict";
     Engine.JsonLevelState.prototype.create.call(this);

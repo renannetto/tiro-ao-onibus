@@ -4,9 +4,7 @@ var TiroAoOnibus = TiroAoOnibus || {};
 
 var dimensions, game;
 
-dimensions = Engine.get_landscape_dimensions(640, 480);
-
-game = new Phaser.Game(480, 480, Phaser.CANVAS);
+game = new Phaser.Game("100%", "100%", Phaser.CANVAS);
 game.state.add("BootState", new Engine.BootState());
 game.state.add("LoadingState", new Engine.LoadingState());
 game.state.add("LevelState", new TiroAoOnibus.LevelState());
