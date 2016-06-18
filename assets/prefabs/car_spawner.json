@@ -1,0 +1,20 @@
+{
+    "sprite": {
+        "type": "sprite",
+        "texture": {"type": "asset_key", "asset_key": ""},
+        "group": "spawners",
+        "properties": {
+            "anchor": {"x": 0.5, "y": 0.5}
+        }
+    },
+    "components": {
+    },
+    "scripts": {
+        "spawn_car": {
+            "prefab_to_create": "car",
+            "pool": "cars",
+            "spawn_interval": 2,
+            "bus_probability": 0.3
+        }
+    }
+}

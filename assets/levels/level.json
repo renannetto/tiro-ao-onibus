@@ -1,0 +1,25 @@
+{
+    "assets": {
+        "cars_spritesheet": { "type": "spritesheet", "source": "assets/images/cars.png", "frame_width": 150, "frame_height": 105 },
+        "bus_image": { "type": "image", "source": "assets/images/bus.png" },
+
+        "car": { "type": "prefab", "source": "assets/prefabs/car.json" },
+        "bus": { "type": "prefab", "source": "assets/prefabs/bus.json" }
+    },
+    "groups": [
+        "spawners",
+        "cars"
+    ],
+    "prefabs": {
+        "car_spawner": {
+            "type": "car_spawner",
+            "position": {"x": 0, "y": 0},
+        }
+    },
+    "hud": {
+        "margins": {"left": 20, "right": 20, "top": 20, "bottom": 20},
+        "elements": {
+
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "world": {"origin_x": 0, "origin_y": 0, "width": 640, "height": 480},
+    "assets": {
+        "text": { "type": "prefab", "source": "assets/prefabs/text.json" }
+    },
+    "groups": [
+        "hud"
+    ],
+    "prefabs": {
+        "title": {
+            "type": "text",
+            "position": {"x": 0.5, "y": 0.3},
+            "properties": {
+                "fontSize": 48,
+                "text": "Tiro ao Ônibus"
+            }
+        },
+        "start_game_message": {
+            "type": "text",
+            "position": {"x": 0.5, "y": 0.7},
+            "properties": {
+                "fontSize": 24,
+                "text": "touch screen to start"
+            }
+        }
+    }
+}

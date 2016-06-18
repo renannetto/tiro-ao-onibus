@@ -1,0 +1,22 @@
+{
+    "sprite": {
+        "type": "sprite",
+        "texture": {"type": "asset_key", "asset_key": "cars_spritesheet"},
+        "group": "cars",
+        "properties": {
+            "anchor": {"x": 0.5, "y": 0.5}
+        }
+    },
+    "components": {
+        "arcade_body": {
+            "collisions": [
+                {"type": "overlap", "target_type": "groups", "target": "arrows", "context": "hit_car", "callback": "hit"}
+            ]
+        }
+    },
+    "scripts": {
+        "hit_car": {
+
+        }
+    }
+}
