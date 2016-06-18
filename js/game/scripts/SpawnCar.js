@@ -12,6 +12,7 @@ TiroAoOnibus.SpawnCar.prototype.constructor = TiroAoOnibus.SpawnCar;
 
 TiroAoOnibus.SpawnCar.prototype.init = function () {
     "use strict";
+    Engine.CreatePrefabFromPool.prototype.init.call(this);
     this.spawn_timer = this.game_state.game.time.create(false);
     this.schedule_next_spawn();
     this.spawn_timer.start();

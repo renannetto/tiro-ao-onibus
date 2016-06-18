@@ -11,6 +11,7 @@ Engine.SpawnPrefab.prototype.constructor = Engine.SpawnPrefab;
 
 Engine.SpawnPrefab.prototype.init = function () {
     "use strict";
+    Engine.CreatePrefabFromPool.prototype.init.call(this);
     this.spawn_timer = this.game_state.game.time.create();
     this.spawn_timer.loop(Phaser.Timer.SECOND * this.spawn_interval, this.spawn_object, this);
     this.spawn_timer.start();
